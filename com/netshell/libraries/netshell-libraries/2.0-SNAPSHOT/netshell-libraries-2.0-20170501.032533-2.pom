@@ -27,7 +27,7 @@
         <mockito.version>1.10.19</mockito.version>
         <powermock.version>1.6.5</powermock.version>
 		<github.global.server>github</github.global.server>
-		<internal.maven.repo.uri>file://C:/temp/maven/repo</internal.maven.repo.uri>
+		<internal.maven.repo.uri>file://${user.dir}/target/mvn-repo</internal.maven.repo.uri>
     </properties>
 	
 	<distributionManagement>
@@ -177,7 +177,7 @@
 					<configuration>
 						<message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
 						<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-						<outputDirectory>C:\\temp\\maven\\repo</outputDirectory> <!-- matches distribution management repository url above -->
+						<outputDirectory>${internal.maven.repo.uri}</outputDirectory> <!-- matches distribution management repository url above -->
 						<branch>refs/heads/master</branch>                       <!-- remote branch name -->
 						<includes><include>**/*</include></includes>
 						<repositoryName>mvn-repo</repositoryName>      <!-- github repo name -->
