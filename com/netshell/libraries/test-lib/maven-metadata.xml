@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.netshell.libraries</groupId>
-  <artifactId>netshell-libraries</artifactId>
+  <artifactId>test-lib</artifactId>
   <versioning>
     <versions>
       <version>2.0-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20180517133127</lastUpdated>
+    <lastUpdated>20180517133035</lastUpdated>
   </versioning>
 </metadata>
